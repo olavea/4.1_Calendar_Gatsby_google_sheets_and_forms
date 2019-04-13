@@ -7,6 +7,7 @@ const buildCredentials = ({ PROJECT_ID, PRIVATE_KEY, PRIVATE_KEY_ID }) => ({
   private_key_id: PRIVATE_KEY_ID,
   private_key: PRIVATE_KEY.replace(/(\\r)|(\\n)/g, '\n'),
   client_email: `${PROJECT_ID}@appspot.gserviceaccount.com`,
+
   client_id: '',
   auth_uri: 'https://accounts.google.com/o/oauth2/auth',
   token_uri: 'https://oauth2.googleapis.com/token',
@@ -16,7 +17,7 @@ const buildCredentials = ({ PROJECT_ID, PRIVATE_KEY, PRIVATE_KEY_ID }) => ({
 
 module.exports = {
   siteMetadata: {
-    title: 'Gatsby Default Starter',
+    title: 'Google_and_Gatsby_Calendar',
   },
   plugins: [
     'gatsby-plugin-react-helmet',
@@ -45,9 +46,9 @@ module.exports = {
     {
       resolve: 'gatsby-source-google-sheets',
       options: {
-        spreadsheetId: '1VbKFMnTt-r_cW_wq3fQCwbbmtic3qyq1-FYtchNYLo4',
-        worksheetTitle: 'Events',
-        credentials: buildCredentials(process.env),
+        spreadsheetId: '1BKrjs9lUgexcG-Gg_ouU1RuU0Biq_TDJzL3FmlzbCTo',
+        worksheetTitle: 'Form Responses 1',
+        credentials: require('./client_secret.json'),
       },
     },
     'gatsby-plugin-offline',

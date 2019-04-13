@@ -1,10 +1,10 @@
 const theme = require('./themes/main.json')
 
 module.exports = {
-  title: 'Gatsby Starter Event Calendar',
-  subTitle: 'The easiest option to share events!',
-  formLink: 'https://goo.gl/forms/u00WBxeK1kQco0uQ2',
+  title: 'LillyBook Event Calendar',
+  subTitle: 'The easiest events!',
+  formLink: 'https://forms.gle/sPu8edn3C1jmyxUQA',
   maxAmountEvents: 2,
-  limitMonthInTheFuture: 2,
+  limitMonthInTheFuture: 12,
   theme,
 }

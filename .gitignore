@@ -67,4 +67,6 @@ yarn-error.log
 .pnp.js
 # Yarn Integrity file
 .yarn-integrity
-credentials.json
+client_secret.json
+
+client_secret.env
